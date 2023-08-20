@@ -1826,6 +1826,24 @@ until antib == false
        else
        Chat("I Am Not WhiteListed To Modded Games Commands")
        end
+
+    elseif spaceSplit[1] == ".bringdog" or spaceSplit[1] == ".bdog" then
+        function getowner(part)
+            for i=1,15 do
+            task.wait()
+            local char=game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+            local hrp = char:WaitForChild('HumanoidRootPart')
+            hrp.CFrame = part.CFrame
+            end
+            end
+            
+            local char=game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+            local hrp = char:WaitForChild('HumanoidRootPart')
+            local ogcframe = hrp.CFrame
+            getowner(workspace.Doge.Torso)
+            workspace.Doge.Torso.CFrame = ogcframe
+            hrp.CFrame = ogcframe
+
        
     elseif spaceSplit[1] == ".check" or spaceSplit[1] == ".checkplace" then
        if game.PlaceId == 574746640 then
@@ -1834,6 +1852,23 @@ until antib == false
        Chat("Game Is Not Modded With Fedora Admin")
        end
        
+    elseif spaceSplit[1] == ".bringbay" or spaceSplit[1] == ".bbaby" then
+        function getowner(part)
+            for i=1,15 do
+            task.wait()
+            local char=game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+            local hrp = char:WaitForChild('HumanoidRootPart')
+            hrp.CFrame = part.CFrame
+            end
+            end
+            
+            local char=game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+            local hrp = char:WaitForChild('HumanoidRootPart')
+            local ogcframe = hrp.CFrame
+            getowner(workspace.baby.Torso)
+            workspace.baby.Torso.CFrame = ogcframe
+            hrp.CFrame = ogcframe
+
 
     elseif spaceSplit[1] == ".breakchat" or spaceSplit[1] == ".chaterror" then
     wait(0.5)
@@ -1919,6 +1954,7 @@ end
 while task.wait() do
     e()
     end
+
    
     elseif spaceSplit[1] == ".nolegsr15"  then
     local c = game.Players.LocalPlayer.Character
@@ -2456,6 +2492,23 @@ while task.wait() do
     end
 end
 
+elseif spaceSplit[1] == ".bringgirl" or spaceSplit[1] == ".bgirl" then
+    function getowner(part)
+        for i=1,15 do
+        task.wait()
+        local char=game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+        local hrp = char:WaitForChild('HumanoidRootPart')
+        hrp.CFrame = part.CFrame
+        end
+        end
+        
+        local char=game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait()
+        local hrp = char:WaitForChild('HumanoidRootPart')
+        local ogcframe = hrp.CFrame
+        getowner(workspace.girl.Torso)
+        workspace.girl.Torso.CFrame = ogcframe
+        hrp.CFrame = ogcframe
+
     elseif spaceSplit[1] == ".fpsboost" or spaceSplit[1] == "bfps"  then
          local decalsyeeted = true 
 local g = game
@@ -2899,6 +2952,9 @@ TextLabel_2.Text = ([[
  ungrabcats / ungrabc
  bringmuf / bmuf
  bringsocky / bsocky
+ bringbaby / bbaby
+ bringgirl / bgirl
+ bringdog / bdog
  voidmuf / vmuf
  controlmuffy / cmuf
  controlsocky / csock
