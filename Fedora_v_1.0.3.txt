@@ -644,7 +644,9 @@ nsLoop = game:GetService("RunService").Stepped:Connect(function()
     end
 end)
 
-    
+local cc;cc = plr.Chatted:Connect(function(msg)
+    local spaceSplit = msg:split(" ")
+
       if spaceSplit[1] == ".digmuf" or spaceSplit[1] == "/e digmuf" then
     if wl == true then
 	game.Workspace.muffy.Tail.CanCollide = false
@@ -2948,6 +2950,8 @@ TextLabel_2.Text = ([[
  unteleportspam / unts
  clockspam / cs
  unclockspam / uncs
+ audio
+ unaudio
             Fencing:
             
  healthglitch / hg
