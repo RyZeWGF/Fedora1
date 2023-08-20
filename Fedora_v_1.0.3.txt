@@ -644,27 +644,6 @@ nsLoop = game:GetService("RunService").Stepped:Connect(function()
     end
 end)
 
-local cc;cc = plr.Chatted:Connect(function(msg)
-    local spaceSplit = msg:split(" ")
-    
-    local lp = game.Players.LocalPlayer
-	local sound = game:GetService("Lighting").fire.Model["Haunted house"].LightningSound
-	local time = 3
-	lp.Chatted:Connect(function(c)
-	if c == '.audio' then
-	_G.l = false
-	_G.l = true
-	spawn(function()
-	while _G.l == true do
-	sound:Play()
-	task.wait(time)
-	end
-	end)
-	elseif c == '.unaudio' then
-	_G.l = false
-	end
-	end)
-    
     
       if spaceSplit[1] == ".digmuf" or spaceSplit[1] == "/e digmuf" then
     if wl == true then
@@ -2969,8 +2948,6 @@ TextLabel_2.Text = ([[
  unteleportspam / unts
  clockspam / cs
  unclockspam / uncs
- audio 
- unaudio
             Fencing:
             
  healthglitch / hg
