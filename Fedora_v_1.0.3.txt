@@ -5,7 +5,7 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 
 local Settings = {
     Prefix = ".", 
-    Version = "1.0.2", 
+    Version = "1.0.3", 
     
     CommandKey = "BackSlash", -- see: "https://developer.roblox.com/en-us/api-reference/enum/KeyCode" for all key codes
     GuiLogo = "http://www.roblox.com/asset/?id=5234318900"
@@ -123,7 +123,7 @@ VersionLabelIntro.BackgroundTransparency = 1.000
 VersionLabelIntro.Position = UDim2.new(0.5, 0, 0, 0)
 VersionLabelIntro.Size = UDim2.new(1, 0, 1, 0)
 VersionLabelIntro.Font = Enum.Font.GothamSemibold
-VersionLabelIntro.Text = "V1.0.2"
+VersionLabelIntro.Text = "V1.0.3"
 VersionLabelIntro.TextColor3 = Color3.fromRGB(205, 255, 233)
 VersionLabelIntro.TextSize = 30.000
 VersionLabelIntro.TextTransparency = 0
@@ -1820,7 +1820,7 @@ until antib == false
         wait(0.5)
        Chat("Script Is Fedora")
        Chat("Made by 14anz and D4RK")
-       Chat("Script Version Is 1.0.2 And It Is Free!")
+       Chat("Script Version Is 1.0.3 And It Is Free!")
        if wl == true then
        Chat("I Am WhiteListed To Modded Games Commands")
        else
